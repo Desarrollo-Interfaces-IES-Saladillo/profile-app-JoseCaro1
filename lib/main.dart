@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -58,6 +59,38 @@ class MyProfile extends StatelessWidget {
                   ],
                 ),
               ),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                child: Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(0),
+                  ),
+                  child: Row(
+                    children: [
+                      SizedBox(
+                        width: 10.0,
+                        height: 30.0,
+                      ),
+                      Icon(
+                        Icons.phone,
+                        size: 20.0,
+                      ),SizedBox(
+                        width: 10.0,
+                      ),
+                      Text(
+                        '633221933',
+                        style: TextStyle(
+                          fontFamily: 'Roboto',
+                          fontSize: 15.0,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10.0,
+                      )
+                    ],
+                  ),
+                ),
+              )
             ],
           ),
         ),
