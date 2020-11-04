@@ -12,86 +12,89 @@ class MyProfile extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Column(
-            children: [
-              CircleAvatar(
-                backgroundColor: Colors.red,
-                radius: 50.0,
-                backgroundImage: AssetImage('assets/images/obiwan.png'),
-              ),
-              Text(
-                'Obi-Wan Kenobi',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24.0,
-                  fontFamily: 'PressStart2P',
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                CircleAvatar(
+                  backgroundColor: Colors.red,
+                  radius: 50.0,
+                  backgroundImage: AssetImage('assets/images/obiwan.png'),
                 ),
-              ),
-              Text(
-                'Jedi master',
-                style: TextStyle(
-                  fontSize: 18.0,
-                  fontFamily: 'Roboto',
-                  letterSpacing: 2.5,
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.only(left: 10.0, right: 10.0),
-                height: 30.0,
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.mail_outline_outlined,
-                      size: 20.0,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'obi_wan@iessaladillo.es',
-                      style: TextStyle(
-                        fontFamily: 'Roboto',
-                        fontSize: 15.0,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                child: Card(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(0),
+                Text(
+                  'Obi-Wan Kenobi',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24.0,
+                    fontFamily: 'PressStart2P',
                   ),
+                ),
+                Text(
+                  'Jedi master',
+                  style: TextStyle(
+                    fontSize: 18.0,
+                    fontFamily: 'Roboto',
+                    letterSpacing: 2.5,
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  padding: EdgeInsets.only(left: 10.0, right: 10.0),
+                  height: 30.0,
+                  color: Colors.white,
                   child: Row(
                     children: [
-                      SizedBox(
-                        width: 10.0,
-                        height: 30.0,
-                      ),
                       Icon(
-                        Icons.phone,
+                        Icons.mail_outline_outlined,
                         size: 20.0,
-                      ),SizedBox(
+                      ),
+                      SizedBox(
                         width: 10.0,
                       ),
                       Text(
-                        '633221933',
+                        'obi_wan@iessaladillo.es',
                         style: TextStyle(
                           fontFamily: 'Roboto',
                           fontSize: 15.0,
                         ),
                       ),
-                      SizedBox(
-                        width: 10.0,
-                      )
                     ],
                   ),
                 ),
-              )
-            ],
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  child: Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(0),
+                    ),
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          width: 10.0,
+                          height: 30.0,
+                        ),
+                        Icon(
+                          Icons.phone,
+                          size: 20.0,
+                        ),SizedBox(
+                          width: 10.0,
+                        ),
+                        Text(
+                          '633221933',
+                          style: TextStyle(
+                            fontFamily: 'Roboto',
+                            fontSize: 15.0,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 10.0,
+                        )
+                      ],
+                    ),
+                  ),
+                )
+              ],
+            ),
           ),
         ),
       ),
